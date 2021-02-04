@@ -16,7 +16,11 @@ let basketModule = (function() {
 
         //Get the total price of all items in the basket
         getTotal: function() {
-            return basket.reduce((acc, item) => acc + item.price), 0;
+            return basket.reduce((acc, item) => acc + item.price, 0);
         }
     };
 })();   
+
+
+
+
